@@ -1,0 +1,98 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swastik : Cafe & Restaurant</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="header">
+<header>
+    <div class="row">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+    <a href="#"><img src="{% static 'images/logo.jpg' %}"></a>
+        <div><b>&nbsp;SWASTIK</b></div>
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    <div style="margin:30px auto auto auto">
+        <ul>
+        <li><a href="">Cafe Menu</a></li>
+        <li><a href="">Offers</a></li>
+        <li><a href="">Social Corner</a></li>
+        <!--<li><a href="">About Us</a></li>-->
+        <select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+        </ul>
+    </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div style="margin:20px auto auto 50px">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        </div>
+    </div>
+    </div>
+</header>
+</div>
+
+{% block content %}
+{% endblock content%}
+<footer>
+    <div class="footer-mid" style="margin-left:90px;">
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <ul>
+                    <li><a href="#">fdfdf</a> </li>
+                </ul>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <ul>
+                    <li><a href="#">etye</a> </li>
+                </ul>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <ul>
+                    <li><a href="#">saadf</a> </li>
+                </ul>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <ul>
+                    <li><a href="#">dfsdfd</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+</html>

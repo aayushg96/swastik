@@ -1,0 +1,82 @@
+.header,.middle-section-left,footer
+{margin: 10px 10px 5px 10px;
+}
+
+header,footer
+{border: 1px solid black;
+}
+
+ul
+{
+list-style-type:none;}
+
+li a
+{ text-decoration: none;
+float :left;
+margin : auto 30px auto auto;
+font-size:25px;
+}
+
+.myslides
+{
+display:none;}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    margin-left:10px;
+}
+
+/* instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+    margin-left:10px;
+}
+/* youtube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    margin-left:10px;
+}
+
+
+hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 15px auto ;
+       height: 0;
+       width: 90%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 1px solid #aaaaaa;
+       border-bottom: 1px solid #ffffff;
+    }
